@@ -54,4 +54,4 @@ class OrderQueue:
         self.currentSize = self.currentSize - 1
         self.heapList.pop()
         self.percDown(1)
-        return retval
+        return str(retval.getOrderDescription())
