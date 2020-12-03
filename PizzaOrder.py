@@ -24,8 +24,7 @@ class PizzaOrder:
         
         TotalPrice = 0.0
         for pizza in self.pizzas:
-            OD += pizza.getPizzaDetails()
-            OD += "----\n"
+            OD += pizza.getPizzaDetails() + "\n----\n"
             TotalPrice += pizza.getPrice()
 
         OD += "TOTAL ORDER PRICE: ${:.2f}\n******\n".format(TotalPrice)
