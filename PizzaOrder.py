@@ -30,3 +30,16 @@ class PizzaOrder:
         OD += "TOTAL ORDER PRICE: ${:.2f}\n******\n".format(TotalPrice)
         return OD
 
+    def __gt__(self, other):
+        if self.time > other.time:
+            return True
+        else:
+            return False
+
+    def __lt__(self, other):
+        if self.time < other.time:
+            return True
+        else:
+            return False
+
+

@@ -17,14 +17,3 @@ class Pizza:
     def setSize(self, size):
         self.size = size
 
-    def __gt__(self, other):
-        if self.time > other.time:
-            return True
-        else:
-            return False
-
-    def __lt__(self, other):
-        if self.time < other.time:
-            return True
-        else:
-            return False
