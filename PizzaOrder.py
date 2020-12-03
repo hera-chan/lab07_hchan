@@ -20,7 +20,7 @@ class PizzaOrder:
 
     def getOrderDescription(self):
         OD = "******\n"
-        OD += "OrderTime: {}\n".format(self.time)
+        OD += "Order Time: {}\n".format(self.time)
         
         TotalPrice = 0.0
         for pizza in self.pizzas:
